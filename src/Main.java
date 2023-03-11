@@ -1,23 +1,9 @@
 public class Main {
     public static void main(String[] args) {
 
-        Car [] cars = {new Car(),new Car()};
-        cars[0].setModelName("car1");
-        cars[1].setModelName("car2");
-        cars[0].setWheelsCount(4);
-        cars[1].setWheelsCount(4);
-
-        Truck [] trucks = {new Truck(),new Truck()};
-        trucks[0].setModelName("truck1");
-        trucks[1].setModelName("truck2");
-        trucks[0].setWheelsCount(6);
-        trucks[1].setWheelsCount(8);
-
-        Bicycle[] bicycles = {new Bicycle(),new Bicycle()};
-        bicycles[0].setModelName("bicycle1");
-        bicycles[1].setModelName("bicycle2");
-        bicycles[0].setWheelsCount(2);
-        bicycles[1].setWheelsCount(2);
+        Car [] cars = {new Car("car1",4),new Car("car2",4)};
+        Truck [] trucks = {new Truck("truck1",6),new Truck("truck2",8)};
+        Bicycle[] bicycles = {new Bicycle("bicycle1"),new Bicycle("bicycle2")};
 
         ServiceStation serviceStation = new ServiceStation();
 
